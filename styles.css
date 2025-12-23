@@ -272,6 +272,8 @@ img {
 .project-card:nth-child(2) { animation-delay: 0.2s; }
 .project-card:nth-child(3) { animation-delay: 0.3s; }
 .project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
 
 .project-card:hover {
     transform: translateY(-10px);
@@ -356,6 +358,33 @@ img {
 .project-card:hover .play-text {
     transform: translateY(0);
     opacity: 1;
+}
+
+.project-card.no-preview {
+    cursor: default;
+}
+
+.mobile-badge {
+    width: 70px;
+    height: 70px;
+    background: #6c757d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    transform: scale(0.8);
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(108, 117, 125, 0.5);
+}
+
+.mobile-badge svg {
+    width: 30px;
+    height: 30px;
+}
+
+.project-card.no-preview:hover .mobile-badge {
+    transform: scale(1);
 }
 
 .project-info {
